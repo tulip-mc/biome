@@ -4,5 +4,5 @@
 
 scoreboard players add @s temp_store.tulip_biome.player.cold_time 1
 
-execute if biome ~ ~ ~ #tulip_biome:cold if score @s temp_store.tulip_biome.player.cold_time matches 12.. unless score @s tulip_biome.player.cold matches ..0 run function tulip_biome:system/cold/decrease
-execute unless biome ~ ~ ~ #tulip_biome:cold if score @s temp_store.tulip_biome.player.cold_time matches 16.. unless score @s tulip_biome.player.cold matches 100.. run function tulip_biome:system/cold/heat
+execute if biome ~ ~ ~ #tulip_biome:cold if score @s temp_store.tulip_biome.player.cold_time >= cold.cold_player_interval tulip.config unless score @s tulip_biome.player.cold matches ..0 run function tulip_biome:system/cold/decrease
+execute unless biome ~ ~ ~ #tulip_biome:cold if score @s temp_store.tulip_biome.player.cold_time >= cold.heat_player_interval tulip.config unless score @s tulip_biome.player.cold >= cold.max_cold_level tulip.config run function tulip_biome:system/cold/heat

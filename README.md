@@ -1,6 +1,8 @@
-# tulip-currency
+# tulip-biome
 
-money money money money money money money money money money money money money money money money money money money money money money money money
+the biome system! it's still in a very early phase, but many cool things to come.
+
+currently, it contains custom biomes with particles, colouring, and a player temperature system
 
 also check out:
 - [tulip/skill](https://github.com/tulip-mc/skill)

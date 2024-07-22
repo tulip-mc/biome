@@ -6,6 +6,8 @@ scoreboard objectives add temp_store.tulip_biome.player.cold_time dummy
 
 scoreboard objectives add temp_store.tulip_biome.player.freeze_time dummy
 
+scoreboard objectives add temp_store.tulip_biome.heat_marker_time dummy
+
 
 # options
 scoreboard players set cold.max_cold_level tulip.config 50

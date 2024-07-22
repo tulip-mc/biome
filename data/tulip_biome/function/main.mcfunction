@@ -5,3 +5,7 @@ execute as @a unless score @s tulip_biome.player.cold matches 0.. run scoreboard
 
 execute as @a at @s if score @s tulip_biome.player.cold matches 0.. if score @s tulip_biome.player.cold <= cold.max_cold_level tulip.config run function tulip_biome:system/cold/main
 execute as @a at @s if score @s tulip_biome.player.cold matches ..0 unless entity @s[gamemode=creative] run function tulip_biome:system/freeze/main
+
+
+# heat markers
+execute as @e[tag=heat.generic] at @s run function tulip_biome:system/heat_marker/main

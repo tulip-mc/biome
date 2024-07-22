@@ -9,4 +9,4 @@ execute if biome ~ ~ ~ #tulip_biome:cold if score @s temp_store.tulip_biome.play
 
 execute unless biome ~ ~ ~ #tulip_biome:cold if score @s temp_store.tulip_biome.player.cold_time >= cold.heat_player_interval tulip.config unless score @s tulip_biome.player.cold >= cold.max_cold_level tulip.config run function tulip_biome:system/cold/heat
 # near heat marker
-execute if entity @e[tag=heat.generic,distance=..10] if score @s temp_store.tulip_biome.player.cold_time >= cold.heat_player_interval_extreme tulip.config unless score @s tulip_biome.player.cold >= cold.max_cold_level tulip.config run function tulip_biome:system/cold/heat
+execute if entity @e[tag=heat.generic,distance=..8] if score @s temp_store.tulip_biome.player.cold_time >= cold.heat_player_interval_extreme tulip.config unless score @s tulip_biome.player.cold >= cold.max_cold_level tulip.config run function tulip_biome:system/cold/heat

@@ -8,4 +8,4 @@ execute as @a at @s if score @s tulip_biome.player.cold matches ..0 unless entit
 
 
 # heat markers
-execute as @e[tag=heat.generic] at @s run function tulip_biome:system/heat_marker/main
+execute as @e[type=minecraft:area_effect_cloud,tag=heat.generic] at @s if entity @p[distance=..10] run function tulip_biome:system/heat_marker/main
